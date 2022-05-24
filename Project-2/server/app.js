@@ -4,6 +4,11 @@ app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => res.send('Hello from the server!'))
 
+app.post('/signup', (req, res) => {
+    const email = req.body.email
+})
+
+
 app.post('/login', (req, res) => {
     console.log('Received login data!')
     const email = req.body.email
