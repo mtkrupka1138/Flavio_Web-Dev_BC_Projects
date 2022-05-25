@@ -34,11 +34,12 @@ app.post('/signup', (req, res) => {
 })
 
 const accountExists = (email) => {
+    // connect to database later
     return false
 }
 
 const createAccount = (email, password) => {
-    
+    // connect to database later
 }
 
 
